@@ -1,0 +1,30 @@
+{
+  "name": "itemsapi-cli",
+  "version": "1.0.0",
+  "description": "The command line interface for ItemsAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itemsapi/itemsapi-cli.git"
+  },
+  "keywords": [
+    "itemsapi",
+    "elasticsearch",
+    "cli",
+    "generator"
+  ],
+  "author": "Matt Rzepa <mrzepa89@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itemsapi/itemsapi-cli/issues"
+  },
+  "homepage": "https://github.com/itemsapi/itemsapi-cli#readme",
+  "dependencies": {
+    "vorpal": "^1.11.4",
+    "yeoman-environment": "^1.6.6",
+    "yo": "^1.8.5"
+  }
+}

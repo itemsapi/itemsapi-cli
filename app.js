@@ -1,30 +1,17 @@
 #!/usr/bin/env node
 
 var program = require('commander');
-var mkdirp = require('mkdirp');
-var os = require('os');
 var fs = require('fs');
 var path = require('path');
-var readline = require('readline');
-var sortedObject = require('sorted-object');
 var util = require('util');
-
-var _exit = process.exit;
-var eol = os.EOL;
-var pkg = require('../package.json');
-
-var version = pkg.version;
-
 
 var Promise = require('bluebird')
 var _ = require('lodash')
-var fs = Promise.promisifyAll(require('fs-extra'))
+//var fs = Promise.promisifyAll(require('fs-extra'))
 var simpleGit = require('simple-git')()
 
 var colors = require('colors');
 var app_dir = './my-app'
-
-var program = require('commander');
 
 program
   .version('0.0.1')

@@ -1,6 +1,6 @@
 {
   "name": "itemsapi-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The command line interface for ItemsAPI",
   "main": "index.js",
   "scripts": {
@@ -29,10 +29,7 @@
     "bluebird": "^3.4.6",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
-    "exec": "^0.2.1",
-    "fs-extra": "^1.0.0",
     "lodash": "^4.17.2",
-    "simple-git": "^1.62.0",
-    "sorted-object": "^2.0.1"
+    "simple-git": "^1.62.0"
   }
 }

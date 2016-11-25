@@ -24,25 +24,16 @@ program
   .command('generate <name>')
   .description('Generate ItemsAPI web application')
   //.option('-s, --setup_mode [mode]', 'Which setup mode to use')
-  .option('-h, --elasticsearch_url <url>', 'Elasticsearch Url')
+  //.option('-h, --elasticsearch_url <url>', 'Elasticsearch Url')
   //.action(function(env, options){
   .action(function(name, env){
     console.log('ItemsAPI starter is being installed.. Please wait..');
     app_dir = name
 
     if (fs.existsSync(app_dir)) {
-      //colors.red(txt); //display the help text in red on the console
       console.log(`The app name \'${app_dir}\' already exists. Please choose another name and try again!`.red);
       process.exit();
     }
-
-    //console.log('es url');
-    //console.log(name);
-    //console.log(env);
-    //console.log(env.elasticsearch_url);
-    //console.log(program.elasticsearch_url);
-
-    //process.exit()
 
     var path = app_dir
 
@@ -62,11 +53,11 @@ if (
   !process.argv.slice(2).length ||
   (process.argv.length > 2 && process.argv.indexOf('generate') === -1)
 ) {
-  program.outputHelp();
+  program.outputHelp('generate');
   console.log('  Examples:');
   console.log('');
   console.log('    $' + ' itemsapi generate my-app'.green + ' (simplest installation)');
-  console.log('    $' + ' itemsapi generate --elasticsearch_url=http://localhost:9200 my-app'.green + ' (your custom elasticsearch url)');
+  //console.log('    $' + ' itemsapi generate --elasticsearch_url=http://localhost:9200 my-app'.green + ' (your custom elasticsearch url)');
   console.log('');
 }
 

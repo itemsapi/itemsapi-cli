@@ -1,3 +1,29 @@
-### CLI for ItemsAPI
+[![ItemsAPI](http://res.cloudinary.com/abcdefgh123456/image/upload/c_scale,w_150/v1479983228/t2BmYaxc_k705u7.jpg)](https://www.itemsapi.com/)
 
-This tool is in development now..
+# ItemsAPI application generator
+
+## Installation
+
+```sh
+$ npm install -g express-generator
+```
+
+## Quick Start
+
+Create the app:
+
+```bash
+$ itemsapi generate my-app 
+```
+
+Install dependencies:
+
+```bash
+$ cd my-app && npm install 
+```
+
+Start your ItemsAPI applicatoin at `http://localhost:3000/`:
+
+```bash
+$ npm start
+```

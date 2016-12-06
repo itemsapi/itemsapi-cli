@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-$ npm install -g express-generator
+$ npm install -g itemsapi-cli
 ```
 
 ## Quick Start

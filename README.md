@@ -27,3 +27,9 @@ Start your ItemsAPI applicatoin at `http://localhost:3000/`:
 ```bash
 $ npm start
 ```
+
+## Command
+
+```bash
+$ itemsapi import -c zouespow -f data.json --api=http://localhost:5000/api/v1 -l 1000
+```

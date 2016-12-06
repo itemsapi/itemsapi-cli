@@ -1,6 +1,6 @@
 {
   "name": "itemsapi-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The command line interface for ItemsAPI",
   "main": "index.js",
   "scripts": {
@@ -26,9 +26,11 @@
   },
   "homepage": "https://github.com/itemsapi/itemsapi-cli#readme",
   "dependencies": {
+    "JSONStream": "^1.2.1",
     "bluebird": "^3.4.6",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
+    "itemsapi-node": "^1.0.17",
     "lodash": "^4.17.2",
     "simple-git": "^1.62.0"
   }

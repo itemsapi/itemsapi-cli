@@ -8,22 +8,15 @@
 $ npm install -g itemsapi-cli
 ```
 
-## Quick Start
+## Commands
 
-Create the app:
+Generating new application 
 
 ```bash
 $ itemsapi generate my-app 
 ```
 
-Install dependencies:
-
+Importing data
 ```bash
-$ cd my-app && npm install 
-```
-
-Start your ItemsAPI applicatoin at `http://localhost:3000/`:
-
-```bash
-$ npm start
+$ itemsapi import -c zouespow -f data.json --api=http://localhost:5000/api/v1 -l 1000
 ```

@@ -30,6 +30,13 @@ Create project using JSON url
 $ itemsapi projects create --api=http://localhost:5000/api/v1 --url=https://raw.githubusercontent.com/itemsapi/itemsapi-example-data/master/items/movies-processed.json
 ```
 
+### Collections
+
+Print all
+```bash
+$ itemsapi collections list --api=http://localhost:5000/api/v1
+```
+
 ### Items
 
 Importing data

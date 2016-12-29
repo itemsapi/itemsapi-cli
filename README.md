@@ -10,7 +10,7 @@ $ npm install -g itemsapi-cli
 
 ## Commands
 
-Generating new application 
+Generating new ItemsAPI starter application 
 
 ```bash
 $ itemsapi generate my-app 

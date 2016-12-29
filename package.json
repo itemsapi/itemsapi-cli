@@ -1,6 +1,6 @@
 {
   "name": "itemsapi-cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "The command line interface for ItemsAPI",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "author": "Matt Rzepa <mrzepa89@gmail.com>",
   "license": "MIT",
   "bin": {
-    "itemsapi": "./app.js"
+    "itemsapi": "./itemsapi.js"
   },
   "bugs": {
     "url": "https://github.com/itemsapi/itemsapi-cli/issues"

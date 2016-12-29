@@ -44,6 +44,11 @@ Importing data
 $ itemsapi items import --collection zouespow --filename data.json --api=http://localhost:5000/api/v1
 ```
 
+Exporting data
+```bash
+$ itemsapi items export --collection zouespow --api=http://localhost:5000/api/v1 > movies.json
+```
+
 ### Help
 
 General help

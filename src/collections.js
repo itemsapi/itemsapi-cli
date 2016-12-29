@@ -3,7 +3,13 @@ var _ = require('lodash');
 var Promise = require('bluebird');
 
 exports.list = function(data) {
-  return new Promise(function(resolve, reject) {
-    return resolve('Collections list')
+  var client = new ItemsAPI(data.api)
+
+  return client.getCollections()
+  .then(function(res) {
+    return res.data.items
   })
+  /*return new Promise(function(resolve, reject) {
+    return resolve('Collections list')
+  })*/
 }

@@ -3,26 +3,38 @@
 var program = require('commander');
 var service = require('./src/collections')
 var colors = require('colors');
+var Table = require('cli-table');
+var _ = require('lodash')
 
 program
-  .usage('test')
   .option('-a, --api [api]', 'ItemsAPI URL i.e. http://localhost:4000/api/v1')
+  //.usage('test')
 
 program
   .command('list')
   .description('List all collections')
-  .option('-a, --api [api]', 'ItemsAPI URL i.e. http://localhost:4000/api/v1')
   .action(function(options){
     if (!program.api) {
       console.log(`The --api parameter is required`.red)
+      process.exit()
     }
-    //console.log(program.api);
 
     options.api = program.api
 
     service.list(options)
-    .then(function(val) {
-      console.log(val)
+    .then(function(res) {
+
+      var table = new Table({
+        head: ['Name', 'Url']
+      })
+
+      var rows = _.map(res, function(val) {
+        table.push([val.name, program.api + '/items/' + val.name])
+        //return [val.name, 'fff']
+      })
+
+      console.log(table.toString());
+
     })
     .catch(function(err) {
       console.log(err)

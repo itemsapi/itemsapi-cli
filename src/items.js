@@ -4,24 +4,17 @@ var Promise = require('bluebird');
 var JSONStream = require('JSONStream')
 var fs = Promise.promisifyAll(require('fs'));
 
-exports.generate = function() {
-
+exports.export = function(data) {
+  var client = new ItemsAPI(data.api, data.collection)
+  return client.search({
+    per_page: 10000
+  })
+  .then(function(res) {
+    return res.data.items
+  })
 }
 
 exports.import = function(data) {
-
-  if (!data.collection) {
-    return Promise.reject('collection name is required')
-  }
-
-  if (!data.api) {
-    return Promise.reject('API url is required')
-  }
-
-  if (!data.filename) {
-    return Promise.reject('JSON file is required')
-  }
-
   return detectJSONFileType(data.filename)
   .then(function(res) {
     if (res === 'stream') {
@@ -30,7 +23,6 @@ exports.import = function(data) {
       return importNormalJson(data)
     }
   })
-
 }
 
 var importStreamJson = function(data) {

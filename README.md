@@ -1,6 +1,6 @@
 [![ItemsAPI](http://res.cloudinary.com/abcdefgh123456/image/upload/c_scale,w_150/v1479983228/t2BmYaxc_k705u7.jpg)](https://www.itemsapi.com/)
 
-# ItemsAPI application generator
+# ItemsAPI CLI
 
 ## Installation
 
@@ -28,6 +28,13 @@ $ itemsapi projects create --api=http://localhost:5000/api/v1 --filename=movies.
 Create project using JSON url
 ```bash
 $ itemsapi projects create --api=http://localhost:5000/api/v1 --url=https://raw.githubusercontent.com/itemsapi/itemsapi-example-data/master/items/movies-processed.json
+```
+
+### Collections
+
+Print all
+```bash
+$ itemsapi collections list --api=http://localhost:5000/api/v1
 ```
 
 ### Items

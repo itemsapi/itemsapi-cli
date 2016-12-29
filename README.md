@@ -1,6 +1,6 @@
 [![ItemsAPI](http://res.cloudinary.com/abcdefgh123456/image/upload/c_scale,w_150/v1479983228/t2BmYaxc_k705u7.jpg)](https://www.itemsapi.com/)
 
-# ItemsAPI application generator
+# ItemsAPI CLI
 
 ## Installation
 

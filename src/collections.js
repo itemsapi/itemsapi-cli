@@ -9,7 +9,18 @@ exports.list = function(data) {
   .then(function(res) {
     return res.data.items
   })
-  /*return new Promise(function(resolve, reject) {
-    return resolve('Collections list')
-  })*/
+}
+
+exports.reindex = function(data) {
+  var client = new ItemsAPI(data.api, data.collection)
+
+  return client.collectionReindex(undefined, data)
+  .then(function(res) {
+    return client.getCollection()
+  })
+}
+
+exports.get = function(data) {
+  var client = new ItemsAPI(data.api, data.collection)
+  return client.getCollection()
 }

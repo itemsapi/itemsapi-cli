@@ -26,7 +26,7 @@ program
       process.exit()
     }
 
-    if (!options.collection) {
+    if (!options.filename) {
       console.log(`The --filename parameter is required`.red);
       process.exit()
     }
